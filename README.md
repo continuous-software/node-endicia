@@ -1,4 +1,4 @@
-[![Circle CI](https://circleci.com/gh/continuous-software/node-endicia.svg?style=svg)](https://circleci.com/gh/continuous-software/node-endicia)
+[![Circle CI](https://circleci.com/gh/continuous-software/node-endicia.svg?style=svg&circle-token=0f86a48aa88bfe97065759b26b973e5bfd0da9b9)](https://circleci.com/gh/continuous-software/node-endicia)
 
 ![node-endicia](http://www.endicia.com/Content/images/endicia-logo.png)
 
