@@ -27,6 +27,7 @@
     "bluebird": "^2.9.34",
     "casual": "^1.4.7",
     "mocha": "^2.2.5",
+    "node-uuid": "^1.4.3",
     "object-assign": "^3.0.0",
     "request": "^2.60.0",
     "xml2js": "^0.4.9",
