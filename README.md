@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/continuous-software/node-endicia.svg?branch=master)](https://travis-ci.org/continuous-software/node-endicia)
+[![Circle CI](https://circleci.com/gh/continuous-software/node-endicia.svg?style=svg)](https://circleci.com/gh/continuous-software/node-endicia)
 
 ![node-endicia](http://www.endicia.com/Content/images/endicia-logo.png)
 
