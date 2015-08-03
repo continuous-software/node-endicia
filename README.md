@@ -16,4 +16,3 @@ var client = new Endicia({
     PASSPHRASE: '<PLACEHOLDER>'
 });
 ```
-

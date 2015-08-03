@@ -1,5 +1,5 @@
-'use strict'
+'use strict';
 
-var Endicia = require('lib/Endicia.js')
+var Endicia = require('./lib/Endicia');
 
-module.exports = Endicia
+module.exports = Endicia;
