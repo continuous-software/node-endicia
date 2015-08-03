@@ -10,7 +10,7 @@ var client = new Endicia({
   testMode: true
 });
 
-describe('getPostageLabelRequest', function () {
+describe('GetPostageLabelRequest', function () {
   it('should get a label with minimum configuration (from, to, weight)', function (done) {
     client.getPostageLabel({
       to: {
@@ -28,19 +28,19 @@ describe('getPostageLabelRequest', function () {
       },
       weightOz: 1
     }).then(function (result) {
-      var label = result.LabelRequestResponse;
-      assert(!label.ErrorMessage);
-      assert(label.Status);
-      assert(label.Base64LabelImage);
-      assert(label.PIC);
-      assert(label.TrackingNumber);
-      assert(label.FinalPostage);
-      assert(label.TransactionID);
-      assert(label.TransactionDateTime);
-      assert(label.PostmarkDate);
-      assert(label.PostageBalance);
-      assert(label.CostCenter);
-      assert(label.RequesterID);
+      var response = result.LabelRequestResponse;
+      assert(!response.ErrorMessage);
+      assert(response.Status);
+      assert(response.Base64LabelImage);
+      assert(response.PIC);
+      assert(response.TrackingNumber);
+      assert(response.FinalPostage);
+      assert(response.TransactionID);
+      assert(response.TransactionDateTime);
+      assert(response.PostmarkDate);
+      assert(response.PostageBalance);
+      assert(response.CostCenter);
+      assert(response.RequesterID);
       done();
     });
   });
