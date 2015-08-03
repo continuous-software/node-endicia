@@ -1,5 +1,5 @@
 {
-  "name": "node-endicia",
+  "name": "endicia",
   "version": "1.0.0",
   "description": "Node.js SDK for Endicia Label Server API",
   "main": "index.js",
