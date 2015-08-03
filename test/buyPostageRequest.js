@@ -10,7 +10,7 @@ var client = new Endicia({
   testMode: true
 });
 
-describe.only('BuyPostage', function () {
+describe('BuyPostage', function () {
   it('should recredit the account of the given amount', function (done) {
     client.buyPostage({
       recreditAmount: 10
@@ -20,6 +20,13 @@ describe.only('BuyPostage', function () {
       assert(response.Status);
       assert(response.RequesterID);
       assert(response.RequestID);
+      assert(response.CertifiedIntermediary);
+      assert(response.CertifiedIntermediary.AccountID);
+      assert(response.CertifiedIntermediary.SerialNumber);
+      assert(response.CertifiedIntermediary.PostageBalance);
+      assert(response.CertifiedIntermediary.AscendingBalance);
+      assert(response.CertifiedIntermediary.AccountStatus);
+      assert(response.CertifiedIntermediary.DeviceID);
       done();
     });
   });
