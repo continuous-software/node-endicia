@@ -6,7 +6,7 @@ var Endicia = require('../index');
 var client = new Endicia({
   REQUESTER_ID: '2503326',
   ACCOUNT_ID: '2503326',
-  PASSPHRASE: 'K3w6@47V5x3vE0J',
+  PASSPHRASE: 'dewdew423432!frS',
   testMode: true
 });
 

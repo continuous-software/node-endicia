@@ -6,7 +6,7 @@ var Endicia = require('../index');
 var client = new Endicia({
   REQUESTER_ID: '2503326',
   ACCOUNT_ID: '2503326',
-  PASSPHRASE: 'K3w6@47V5x3vE0J',
+  PASSPHRASE: 'dewdew423432!frS',
   testMode: true
 });
 
@@ -20,13 +20,13 @@ describe('BuyPostage', function () {
       assert(response.Status);
       assert(response.RequesterID);
       assert(response.RequestID);
-      assert(response.CertifiedIntermediary);
-      assert(response.CertifiedIntermediary.AccountID);
-      assert(response.CertifiedIntermediary.SerialNumber);
-      assert(response.CertifiedIntermediary.PostageBalance);
-      assert(response.CertifiedIntermediary.AscendingBalance);
-      assert(response.CertifiedIntermediary.AccountStatus);
-      assert(response.CertifiedIntermediary.DeviceID);
+      assert(response.CertifiedIntermediary[0]);
+      assert(response.CertifiedIntermediary[0].AccountID);
+      assert(response.CertifiedIntermediary[0].SerialNumber);
+      assert(response.CertifiedIntermediary[0].PostageBalance);
+      assert(response.CertifiedIntermediary[0].AscendingBalance);
+      assert(response.CertifiedIntermediary[0].AccountStatus);
+      assert(response.CertifiedIntermediary[0].DeviceID);
       done();
     });
   });
